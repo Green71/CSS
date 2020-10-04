@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+#general{
+    width: 1200px;
+    border: 3px solid gray;
+    margin: 20px auto;
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(81, 54, 202);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    text-shadow: 0px 0px 15px black;
+}
+
+#menu{
+    background: #cccccc;;
+    width: 100%;
+    height: 39px;
+}
+
+#menu ul li{
+    display:block;
+    float: left;
+    
+    border-right: 1px solid rgb(173, 173, 173);
+    cursor: pointer;
+}
+
+#menu ul li a {
+    color: #444;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+#menu ul li:hover{
+    background-color: rgb(55, 29, 170);
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+#contenido{
+    width: 69.63%;
+    float: left;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    text-align: center;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    line-height: 230px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#contenido .caja:hover{
+box-shadow: 0px 0px 10px gray inset !important;
+background-color: red;
+}
+
+#contenido h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+}
+
+#lateral{
+    width: 30%;
+    border: 1px solid blue;
+    height: 500px;
+    float: left;
+    min-height: 500px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    border-top:  1px solid #ccc;
+}
+
+.carga{
+    height: 20px;
+    border: 1px solid #ccc;
+    width: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.elemet{
+    width: 40px;
+    height: 20px;
+    background-color: greenyellow;
+    animation-name: desplazo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.rueda{
+    color: gray;
+    font-size: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    text-align: center;
+    animation-name: gira;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desplazo{
+    from{
+        margin-left: -50%;
+    }
+    to{
+        margin-left: 100%;
+    }}
+
+@keyframes gira{
+    from{
+        transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}}
